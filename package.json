@@ -1,0 +1,14 @@
+{
+  "name": "sealed-auctions",
+  "version": "1.0.0",
+  "description": "Auction-based e-commerce platform with sealed bidding",
+  "scripts": {
+    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd backend && npm run dev",
+    "client": "cd frontend && npm start",
+    "install-all": "npm install && cd backend && npm install && cd ../frontend && npm install"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.0"
+  }
+} 
