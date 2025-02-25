@@ -14,6 +14,7 @@ const httpServer = createServer(app);
 // Middleware
 app.use(cors({
   origin: 'http://localhost:3000',
+  origin: 'https://sealed-auction.vercel.app',
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
   allowedHeaders: ['Content-Type', 'Authorization'],
   credentials: true
